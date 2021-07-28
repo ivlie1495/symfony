@@ -40,11 +40,18 @@ class HomeController extends AbstractController
       'Kontak',
       'Blog'
     ];
+    $textsPHPHosting = [
+      'Solusi PHP untuk performa query yang lebih cepat.',
+      'Konsumsi memory yang lebih rendah.',
+      'Support PHP 5.3, PHP 5.4, PHP 5.5, PHP 5.6, PHP 7.',
+      'Fitur enskripsi IonCube dan Zend Guard Loaders.'
+    ];
 
     return $this->render('home.html.twig', [
       'number' => $number,
       'menus' => $menus,
-      'headerInfos' => $headerInfos
+      'headerInfos' => $headerInfos,
+      'textsPHPHosting' => $textsPHPHosting
     ]);
   }
 }
