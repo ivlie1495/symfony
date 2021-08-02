@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light border">
+  <div class="container">
+    <img src="/images/niagahoster-logo.png" alt="Logo" width="200" height="50" />
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        {% for menu in menus %}
+          <li class="nav-item">
+            <a class="nav-link pr-0 pl-3" href="#">{{menu}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

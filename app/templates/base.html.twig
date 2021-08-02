@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+        <style>
+            @media (max-width: 992px) {
+                .promo {
+                    display: none !important;
+                }
+            }
+
+            @media (max-width: 992px) {
+                .content-left-center {
+                    justify-content: center !important;
+                }
+            }
+
+            @media (max-width: 992px) {
+                .text-align-left-center {
+                    text-align: center !important;
+                }
+            }
+
+            .font24 {
+                font-size: 24px;
+            }
+
+            .font36 {
+                font-size: 36px;
+            }
+
+            .line-through {
+                text-decoration: line-through;
+            }
+
+            .border-radius-24 {
+                border-radius: 24px;
+            }
+
+            .border-radius-suffix-icon {
+                border-radius: 24px !important;
+            }
+
+            .border-none {
+                border: none;
+            }
+
+            .no-padding {
+                padding: 0px !important;
+            }
+
+            .small {
+                font-size: 80%;
+            }
+
+            .line-border {
+                border: 2px solid #DEE2E6;
+                border-radius: 12px;
+                width: 64px;
+            }
+
+            .p-box {
+                padding-top: 4px;
+                padding-bottom: 6px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .text-footer {
+                color: #D7DADC;
+            }
+        </style>
+
+        {% block stylesheets %}
+            {#{{ encore_entry_link_tags('app') }}#}
+        {% endblock %}
+
+        <script src="/js/jquery-3.2.1.slim.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {# templates/lucky/number.html.twig #}
+    </body>
+</html>
